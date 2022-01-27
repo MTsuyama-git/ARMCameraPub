@@ -1,0 +1,1043 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 2
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:R R?
+U 1 1 615FF853
+P 3550 1450
+AR Path="/60D4BA24/615FF853" Ref="R?"  Part="1" 
+AR Path="/60D4BA24/615DFC2A/615FF853" Ref="R17"  Part="1" 
+AR Path="/6174C520/615FF853" Ref="R8"  Part="1" 
+F 0 "R8" H 3620 1496 50  0000 L CNN
+F 1 "R" H 3620 1405 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 3480 1450 50  0001 C CNN
+F 3 "~" H 3550 1450 50  0001 C CNN
+	1    3550 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 615FF859
+P 3950 1450
+AR Path="/60D4BA24/615FF859" Ref="R?"  Part="1" 
+AR Path="/60D4BA24/615DFC2A/615FF859" Ref="R24"  Part="1" 
+AR Path="/6174C520/615FF859" Ref="R15"  Part="1" 
+F 0 "R15" H 4020 1496 50  0000 L CNN
+F 1 "R" H 4020 1405 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 3880 1450 50  0001 C CNN
+F 3 "~" H 3950 1450 50  0001 C CNN
+	1    3950 1450
+	1    0    0    -1  
+$EndComp
+Text GLabel 3400 1600 0    50   Input ~ 0
+DI
+Wire Wire Line
+	3550 1300 3750 1300
+Wire Wire Line
+	3750 1300 3750 1400
+Connection ~ 3550 1300
+Wire Wire Line
+	3550 1600 3400 1600
+$Comp
+L power:+3.3V #PWR?
+U 1 1 615FF865
+P 3550 1300
+AR Path="/60D4BA24/615FF865" Ref="#PWR?"  Part="1" 
+AR Path="/60D4BA24/615DFC2A/615FF865" Ref="#PWR033"  Part="1" 
+AR Path="/6174C520/615FF865" Ref="#PWR023"  Part="1" 
+F 0 "#PWR023" H 3550 1150 50  0001 C CNN
+F 1 "+3.3V" H 3565 1473 50  0000 C CNN
+F 2 "" H 3550 1300 50  0001 C CNN
+F 3 "" H 3550 1300 50  0001 C CNN
+	1    3550 1300
+	1    0    0    -1  
+$EndComp
+Text GLabel 4050 1600 2    50   Output ~ 0
+HDI
+Wire Wire Line
+	4050 1600 3950 1600
+Connection ~ 3950 1600
+$Comp
+L OPL_Discrete_Semiconductor:SMD-MOSFET-N-CH-50V-200MA-BSS138W-7-F_SOT-23_ Q?
+U 1 1 615FF870
+P 3750 2500
+AR Path="/60D4BA24/615FF870" Ref="Q?"  Part="1" 
+AR Path="/60D4BA24/615DFC2A/615FF870" Ref="Q9"  Part="1" 
+AR Path="/6174C520/615FF870" Ref="Q8"  Part="1" 
+F 0 "Q8" V 3906 2500 45  0000 C CNN
+F 1 "SMD-MOSFET-N-CH-50V-200MA-BSS138W-7-F_SOT-23_" V 3990 2500 45  0000 C CNN
+F 2 "Package_TO_SOT_SMD:TSOT-23_HandSoldering" H 3750 2500 50  0001 C CNN
+F 3 "" H 3750 2500 50  0001 C CNN
+F 4 "BSS138W-7-F" H 3780 2650 20  0001 C CNN "MPN"
+F 5 "305030000" H 3780 2650 20  0001 C CNN "SKU"
+	1    3750 2500
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 615FF876
+P 3550 2350
+AR Path="/60D4BA24/615FF876" Ref="R?"  Part="1" 
+AR Path="/60D4BA24/615DFC2A/615FF876" Ref="R18"  Part="1" 
+AR Path="/6174C520/615FF876" Ref="R9"  Part="1" 
+F 0 "R9" H 3620 2396 50  0000 L CNN
+F 1 "R" H 3620 2305 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 3480 2350 50  0001 C CNN
+F 3 "~" H 3550 2350 50  0001 C CNN
+	1    3550 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 615FF87C
+P 3950 2350
+AR Path="/60D4BA24/615FF87C" Ref="R?"  Part="1" 
+AR Path="/60D4BA24/615DFC2A/615FF87C" Ref="R25"  Part="1" 
+AR Path="/6174C520/615FF87C" Ref="R16"  Part="1" 
+F 0 "R16" H 4020 2396 50  0000 L CNN
+F 1 "R" H 4020 2305 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 3880 2350 50  0001 C CNN
+F 3 "~" H 3950 2350 50  0001 C CNN
+	1    3950 2350
+	1    0    0    -1  
+$EndComp
+Text GLabel 3400 2500 0    50   Input ~ 0
+STB1
+Wire Wire Line
+	3550 2200 3750 2200
+Wire Wire Line
+	3750 2200 3750 2300
+Connection ~ 3550 2200
+Wire Wire Line
+	3550 2500 3400 2500
+Connection ~ 3550 2500
+$Comp
+L power:+3.3V #PWR?
+U 1 1 615FF888
+P 3550 2200
+AR Path="/60D4BA24/615FF888" Ref="#PWR?"  Part="1" 
+AR Path="/60D4BA24/615DFC2A/615FF888" Ref="#PWR034"  Part="1" 
+AR Path="/6174C520/615FF888" Ref="#PWR024"  Part="1" 
+F 0 "#PWR024" H 3550 2050 50  0001 C CNN
+F 1 "+3.3V" H 3565 2373 50  0000 C CNN
+F 2 "" H 3550 2200 50  0001 C CNN
+F 3 "" H 3550 2200 50  0001 C CNN
+	1    3550 2200
+	1    0    0    -1  
+$EndComp
+Text GLabel 4050 2500 2    50   Output ~ 0
+HSTB1
+Wire Wire Line
+	4050 2500 3950 2500
+Connection ~ 3950 2500
+$Comp
+L OPL_Discrete_Semiconductor:SMD-MOSFET-N-CH-50V-200MA-BSS138W-7-F_SOT-23_ Q?
+U 1 1 615FF893
+P 3700 3350
+AR Path="/60D4BA24/615FF893" Ref="Q?"  Part="1" 
+AR Path="/60D4BA24/615DFC2A/615FF893" Ref="Q7"  Part="1" 
+AR Path="/6174C520/615FF893" Ref="Q6"  Part="1" 
+F 0 "Q6" V 3856 3350 45  0000 C CNN
+F 1 "SMD-MOSFET-N-CH-50V-200MA-BSS138W-7-F_SOT-23_" V 3940 3350 45  0000 C CNN
+F 2 "Package_TO_SOT_SMD:TSOT-23_HandSoldering" H 3700 3350 50  0001 C CNN
+F 3 "" H 3700 3350 50  0001 C CNN
+F 4 "BSS138W-7-F" H 3730 3500 20  0001 C CNN "MPN"
+F 5 "305030000" H 3730 3500 20  0001 C CNN "SKU"
+	1    3700 3350
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 615FF899
+P 3500 3200
+AR Path="/60D4BA24/615FF899" Ref="R?"  Part="1" 
+AR Path="/60D4BA24/615DFC2A/615FF899" Ref="R16"  Part="1" 
+AR Path="/6174C520/615FF899" Ref="R7"  Part="1" 
+F 0 "R7" H 3570 3246 50  0000 L CNN
+F 1 "R" H 3570 3155 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 3430 3200 50  0001 C CNN
+F 3 "~" H 3500 3200 50  0001 C CNN
+	1    3500 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 615FF89F
+P 3900 3200
+AR Path="/60D4BA24/615FF89F" Ref="R?"  Part="1" 
+AR Path="/60D4BA24/615DFC2A/615FF89F" Ref="R23"  Part="1" 
+AR Path="/6174C520/615FF89F" Ref="R14"  Part="1" 
+F 0 "R14" H 3970 3246 50  0000 L CNN
+F 1 "R" H 3970 3155 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 3830 3200 50  0001 C CNN
+F 3 "~" H 3900 3200 50  0001 C CNN
+	1    3900 3200
+	1    0    0    -1  
+$EndComp
+Text GLabel 3350 3350 0    50   Input ~ 0
+STB2
+Wire Wire Line
+	3500 3050 3700 3050
+Wire Wire Line
+	3700 3050 3700 3150
+Connection ~ 3500 3050
+Wire Wire Line
+	3500 3350 3350 3350
+Connection ~ 3500 3350
+$Comp
+L power:+3.3V #PWR?
+U 1 1 615FF8AB
+P 3500 3050
+AR Path="/60D4BA24/615FF8AB" Ref="#PWR?"  Part="1" 
+AR Path="/60D4BA24/615DFC2A/615FF8AB" Ref="#PWR032"  Part="1" 
+AR Path="/6174C520/615FF8AB" Ref="#PWR022"  Part="1" 
+F 0 "#PWR022" H 3500 2900 50  0001 C CNN
+F 1 "+3.3V" H 3515 3223 50  0000 C CNN
+F 2 "" H 3500 3050 50  0001 C CNN
+F 3 "" H 3500 3050 50  0001 C CNN
+	1    3500 3050
+	1    0    0    -1  
+$EndComp
+Text GLabel 4000 3350 2    50   Output ~ 0
+HSTB2
+Wire Wire Line
+	4000 3350 3900 3350
+Connection ~ 3900 3350
+$Comp
+L OPL_Discrete_Semiconductor:SMD-MOSFET-N-CH-50V-200MA-BSS138W-7-F_SOT-23_ Q?
+U 1 1 615FF8B6
+P 3650 4300
+AR Path="/60D4BA24/615FF8B6" Ref="Q?"  Part="1" 
+AR Path="/60D4BA24/615DFC2A/615FF8B6" Ref="Q5"  Part="1" 
+AR Path="/6174C520/615FF8B6" Ref="Q4"  Part="1" 
+F 0 "Q4" V 3806 4300 45  0000 C CNN
+F 1 "SMD-MOSFET-N-CH-50V-200MA-BSS138W-7-F_SOT-23_" V 3890 4300 45  0000 C CNN
+F 2 "Package_TO_SOT_SMD:TSOT-23_HandSoldering" H 3650 4300 50  0001 C CNN
+F 3 "" H 3650 4300 50  0001 C CNN
+F 4 "BSS138W-7-F" H 3680 4450 20  0001 C CNN "MPN"
+F 5 "305030000" H 3680 4450 20  0001 C CNN "SKU"
+	1    3650 4300
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 615FF8BC
+P 3450 4150
+AR Path="/60D4BA24/615FF8BC" Ref="R?"  Part="1" 
+AR Path="/60D4BA24/615DFC2A/615FF8BC" Ref="R12"  Part="1" 
+AR Path="/6174C520/615FF8BC" Ref="R5"  Part="1" 
+F 0 "R5" H 3520 4196 50  0000 L CNN
+F 1 "R" H 3520 4105 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 3380 4150 50  0001 C CNN
+F 3 "~" H 3450 4150 50  0001 C CNN
+	1    3450 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 615FF8C2
+P 3850 4150
+AR Path="/60D4BA24/615FF8C2" Ref="R?"  Part="1" 
+AR Path="/60D4BA24/615DFC2A/615FF8C2" Ref="R21"  Part="1" 
+AR Path="/6174C520/615FF8C2" Ref="R12"  Part="1" 
+F 0 "R12" H 3920 4196 50  0000 L CNN
+F 1 "R" H 3920 4105 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 3780 4150 50  0001 C CNN
+F 3 "~" H 3850 4150 50  0001 C CNN
+	1    3850 4150
+	1    0    0    -1  
+$EndComp
+Text GLabel 3300 4300 0    50   Input ~ 0
+STB3
+Wire Wire Line
+	3450 4000 3650 4000
+Wire Wire Line
+	3650 4000 3650 4100
+Connection ~ 3450 4000
+Wire Wire Line
+	3450 4300 3300 4300
+Connection ~ 3450 4300
+$Comp
+L power:+3.3V #PWR?
+U 1 1 615FF8CE
+P 3450 4000
+AR Path="/60D4BA24/615FF8CE" Ref="#PWR?"  Part="1" 
+AR Path="/60D4BA24/615DFC2A/615FF8CE" Ref="#PWR030"  Part="1" 
+AR Path="/6174C520/615FF8CE" Ref="#PWR020"  Part="1" 
+F 0 "#PWR020" H 3450 3850 50  0001 C CNN
+F 1 "+3.3V" H 3465 4173 50  0000 C CNN
+F 2 "" H 3450 4000 50  0001 C CNN
+F 3 "" H 3450 4000 50  0001 C CNN
+	1    3450 4000
+	1    0    0    -1  
+$EndComp
+Text GLabel 3950 4300 2    50   Output ~ 0
+HSTB3
+Wire Wire Line
+	3950 4300 3850 4300
+Connection ~ 3850 4300
+$Comp
+L OPL_Discrete_Semiconductor:SMD-MOSFET-N-CH-50V-200MA-BSS138W-7-F_SOT-23_ Q?
+U 1 1 615FF8D9
+P 3600 5150
+AR Path="/60D4BA24/615FF8D9" Ref="Q?"  Part="1" 
+AR Path="/60D4BA24/615DFC2A/615FF8D9" Ref="Q3"  Part="1" 
+AR Path="/6174C520/615FF8D9" Ref="Q2"  Part="1" 
+F 0 "Q2" V 3756 5150 45  0000 C CNN
+F 1 "SMD-MOSFET-N-CH-50V-200MA-BSS138W-7-F_SOT-23_" V 3840 5150 45  0000 C CNN
+F 2 "Package_TO_SOT_SMD:TSOT-23_HandSoldering" H 3600 5150 50  0001 C CNN
+F 3 "" H 3600 5150 50  0001 C CNN
+F 4 "BSS138W-7-F" H 3630 5300 20  0001 C CNN "MPN"
+F 5 "305030000" H 3630 5300 20  0001 C CNN "SKU"
+	1    3600 5150
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 615FF8DF
+P 3400 5000
+AR Path="/60D4BA24/615FF8DF" Ref="R?"  Part="1" 
+AR Path="/60D4BA24/615DFC2A/615FF8DF" Ref="R10"  Part="1" 
+AR Path="/6174C520/615FF8DF" Ref="R3"  Part="1" 
+F 0 "R3" H 3470 5046 50  0000 L CNN
+F 1 "R" H 3470 4955 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 3330 5000 50  0001 C CNN
+F 3 "~" H 3400 5000 50  0001 C CNN
+	1    3400 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 615FF8E5
+P 3800 5000
+AR Path="/60D4BA24/615FF8E5" Ref="R?"  Part="1" 
+AR Path="/60D4BA24/615DFC2A/615FF8E5" Ref="R19"  Part="1" 
+AR Path="/6174C520/615FF8E5" Ref="R10"  Part="1" 
+F 0 "R10" H 3870 5046 50  0000 L CNN
+F 1 "R" H 3870 4955 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 3730 5000 50  0001 C CNN
+F 3 "~" H 3800 5000 50  0001 C CNN
+	1    3800 5000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 4850 3600 4850
+Wire Wire Line
+	3600 4850 3600 4950
+Connection ~ 3400 4850
+Wire Wire Line
+	3400 5150 3250 5150
+Connection ~ 3400 5150
+$Comp
+L power:+3.3V #PWR?
+U 1 1 615FF8F0
+P 3400 4850
+AR Path="/60D4BA24/615FF8F0" Ref="#PWR?"  Part="1" 
+AR Path="/60D4BA24/615DFC2A/615FF8F0" Ref="#PWR023"  Part="1" 
+AR Path="/6174C520/615FF8F0" Ref="#PWR018"  Part="1" 
+F 0 "#PWR018" H 3400 4700 50  0001 C CNN
+F 1 "+3.3V" H 3415 5023 50  0000 C CNN
+F 2 "" H 3400 4850 50  0001 C CNN
+F 3 "" H 3400 4850 50  0001 C CNN
+	1    3400 4850
+	1    0    0    -1  
+$EndComp
+Text GLabel 3900 5150 2    50   Output ~ 0
+HSTB4
+Wire Wire Line
+	3900 5150 3800 5150
+Connection ~ 3800 5150
+Text GLabel 3250 5150 0    50   Input ~ 0
+STB4
+$Comp
+L OPL_Discrete_Semiconductor:SMD-MOSFET-N-CH-50V-200MA-BSS138W-7-F_SOT-23_ Q?
+U 1 1 615FF902
+P 3650 5950
+AR Path="/60D4BA24/615FF902" Ref="Q?"  Part="1" 
+AR Path="/60D4BA24/615DFC2A/615FF902" Ref="Q6"  Part="1" 
+AR Path="/6174C520/615FF902" Ref="Q5"  Part="1" 
+F 0 "Q5" V 3806 5950 45  0000 C CNN
+F 1 "SMD-MOSFET-N-CH-50V-200MA-BSS138W-7-F_SOT-23_" V 3890 5950 45  0000 C CNN
+F 2 "Package_TO_SOT_SMD:TSOT-23_HandSoldering" H 3650 5950 50  0001 C CNN
+F 3 "" H 3650 5950 50  0001 C CNN
+F 4 "BSS138W-7-F" H 3680 6100 20  0001 C CNN "MPN"
+F 5 "305030000" H 3680 6100 20  0001 C CNN "SKU"
+	1    3650 5950
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 615FF908
+P 3450 5800
+AR Path="/60D4BA24/615FF908" Ref="R?"  Part="1" 
+AR Path="/60D4BA24/615DFC2A/615FF908" Ref="R13"  Part="1" 
+AR Path="/6174C520/615FF908" Ref="R6"  Part="1" 
+F 0 "R6" H 3520 5846 50  0000 L CNN
+F 1 "R" H 3520 5755 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 3380 5800 50  0001 C CNN
+F 3 "~" H 3450 5800 50  0001 C CNN
+	1    3450 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 615FF90E
+P 3850 5800
+AR Path="/60D4BA24/615FF90E" Ref="R?"  Part="1" 
+AR Path="/60D4BA24/615DFC2A/615FF90E" Ref="R22"  Part="1" 
+AR Path="/6174C520/615FF90E" Ref="R13"  Part="1" 
+F 0 "R13" H 3920 5846 50  0000 L CNN
+F 1 "R" H 3920 5755 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 3780 5800 50  0001 C CNN
+F 3 "~" H 3850 5800 50  0001 C CNN
+	1    3850 5800
+	1    0    0    -1  
+$EndComp
+Text GLabel 3300 5950 0    50   Input ~ 0
+STB5
+Wire Wire Line
+	3450 5650 3650 5650
+Wire Wire Line
+	3650 5650 3650 5750
+Connection ~ 3450 5650
+Wire Wire Line
+	3450 5950 3300 5950
+Connection ~ 3450 5950
+$Comp
+L power:+3.3V #PWR?
+U 1 1 615FF91A
+P 3450 5650
+AR Path="/60D4BA24/615FF91A" Ref="#PWR?"  Part="1" 
+AR Path="/60D4BA24/615DFC2A/615FF91A" Ref="#PWR031"  Part="1" 
+AR Path="/6174C520/615FF91A" Ref="#PWR021"  Part="1" 
+F 0 "#PWR021" H 3450 5500 50  0001 C CNN
+F 1 "+3.3V" H 3465 5823 50  0000 C CNN
+F 2 "" H 3450 5650 50  0001 C CNN
+F 3 "" H 3450 5650 50  0001 C CNN
+	1    3450 5650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3950 5950 3850 5950
+Connection ~ 3850 5950
+$Comp
+L OPL_Discrete_Semiconductor:SMD-MOSFET-N-CH-50V-200MA-BSS138W-7-F_SOT-23_ Q?
+U 1 1 615FF92A
+P 3600 6800
+AR Path="/60D4BA24/615FF92A" Ref="Q?"  Part="1" 
+AR Path="/60D4BA24/615DFC2A/615FF92A" Ref="Q4"  Part="1" 
+AR Path="/6174C520/615FF92A" Ref="Q3"  Part="1" 
+F 0 "Q3" V 3756 6800 45  0000 C CNN
+F 1 "SMD-MOSFET-N-CH-50V-200MA-BSS138W-7-F_SOT-23_" V 3840 6800 45  0000 C CNN
+F 2 "Package_TO_SOT_SMD:TSOT-23_HandSoldering" H 3600 6800 50  0001 C CNN
+F 3 "" H 3600 6800 50  0001 C CNN
+F 4 "BSS138W-7-F" H 3630 6950 20  0001 C CNN "MPN"
+F 5 "305030000" H 3630 6950 20  0001 C CNN "SKU"
+	1    3600 6800
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 615FF930
+P 3400 6650
+AR Path="/60D4BA24/615FF930" Ref="R?"  Part="1" 
+AR Path="/60D4BA24/615DFC2A/615FF930" Ref="R11"  Part="1" 
+AR Path="/6174C520/615FF930" Ref="R4"  Part="1" 
+F 0 "R4" H 3470 6696 50  0000 L CNN
+F 1 "R" H 3470 6605 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 3330 6650 50  0001 C CNN
+F 3 "~" H 3400 6650 50  0001 C CNN
+	1    3400 6650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 615FF936
+P 3800 6650
+AR Path="/60D4BA24/615FF936" Ref="R?"  Part="1" 
+AR Path="/60D4BA24/615DFC2A/615FF936" Ref="R20"  Part="1" 
+AR Path="/6174C520/615FF936" Ref="R11"  Part="1" 
+F 0 "R11" H 3870 6696 50  0000 L CNN
+F 1 "R" H 3870 6605 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 3730 6650 50  0001 C CNN
+F 3 "~" H 3800 6650 50  0001 C CNN
+	1    3800 6650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 6500 3600 6500
+Wire Wire Line
+	3600 6500 3600 6600
+Connection ~ 3400 6500
+Wire Wire Line
+	3400 6800 3250 6800
+Connection ~ 3400 6800
+$Comp
+L power:+3.3V #PWR?
+U 1 1 615FF941
+P 3400 6500
+AR Path="/60D4BA24/615FF941" Ref="#PWR?"  Part="1" 
+AR Path="/60D4BA24/615DFC2A/615FF941" Ref="#PWR028"  Part="1" 
+AR Path="/6174C520/615FF941" Ref="#PWR019"  Part="1" 
+F 0 "#PWR019" H 3400 6350 50  0001 C CNN
+F 1 "+3.3V" H 3415 6673 50  0000 C CNN
+F 2 "" H 3400 6500 50  0001 C CNN
+F 3 "" H 3400 6500 50  0001 C CNN
+	1    3400 6500
+	1    0    0    -1  
+$EndComp
+Text GLabel 3900 6800 2    50   Output ~ 0
+HSTB6
+Wire Wire Line
+	3900 6800 3800 6800
+Connection ~ 3800 6800
+Text GLabel 3250 6800 0    50   Input ~ 0
+STB6
+Text GLabel 3950 5950 2    50   Output ~ 0
+HSTB5
+$Comp
+L OPL_Discrete_Semiconductor:SMD-MOSFET-N-CH-50V-200MA-BSS138W-7-F_SOT-23_ Q?
+U 1 1 615FF977
+P 5850 2600
+AR Path="/60D4BA24/615FF977" Ref="Q?"  Part="1" 
+AR Path="/60D4BA24/615DFC2A/615FF977" Ref="Q11"  Part="1" 
+AR Path="/6174C520/615FF977" Ref="Q10"  Part="1" 
+F 0 "Q10" V 6006 2600 45  0000 C CNN
+F 1 "SMD-MOSFET-N-CH-50V-200MA-BSS138W-7-F_SOT-23_" V 6090 2600 45  0000 C CNN
+F 2 "Package_TO_SOT_SMD:TSOT-23_HandSoldering" H 5850 2600 50  0001 C CNN
+F 3 "" H 5850 2600 50  0001 C CNN
+F 4 "BSS138W-7-F" H 5880 2750 20  0001 C CNN "MPN"
+F 5 "305030000" H 5880 2750 20  0001 C CNN "SKU"
+	1    5850 2600
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 615FF97D
+P 5650 2450
+AR Path="/60D4BA24/615FF97D" Ref="R?"  Part="1" 
+AR Path="/60D4BA24/615DFC2A/615FF97D" Ref="R27"  Part="1" 
+AR Path="/6174C520/615FF97D" Ref="R18"  Part="1" 
+F 0 "R18" H 5720 2496 50  0000 L CNN
+F 1 "R" H 5720 2405 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 5580 2450 50  0001 C CNN
+F 3 "~" H 5650 2450 50  0001 C CNN
+	1    5650 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 615FF983
+P 6050 2450
+AR Path="/60D4BA24/615FF983" Ref="R?"  Part="1" 
+AR Path="/60D4BA24/615DFC2A/615FF983" Ref="R30"  Part="1" 
+AR Path="/6174C520/615FF983" Ref="R21"  Part="1" 
+F 0 "R21" H 6120 2496 50  0000 L CNN
+F 1 "R" H 6120 2405 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 5980 2450 50  0001 C CNN
+F 3 "~" H 6050 2450 50  0001 C CNN
+	1    6050 2450
+	1    0    0    -1  
+$EndComp
+Text GLabel 5500 2600 0    50   Input ~ 0
+CLK
+Wire Wire Line
+	5650 2300 5850 2300
+Wire Wire Line
+	5850 2300 5850 2400
+Connection ~ 5650 2300
+Wire Wire Line
+	5650 2600 5500 2600
+Connection ~ 5650 2600
+$Comp
+L power:+3.3V #PWR?
+U 1 1 615FF98F
+P 5650 2300
+AR Path="/60D4BA24/615FF98F" Ref="#PWR?"  Part="1" 
+AR Path="/60D4BA24/615DFC2A/615FF98F" Ref="#PWR036"  Part="1" 
+AR Path="/6174C520/615FF98F" Ref="#PWR026"  Part="1" 
+F 0 "#PWR026" H 5650 2150 50  0001 C CNN
+F 1 "+3.3V" H 5665 2473 50  0000 C CNN
+F 2 "" H 5650 2300 50  0001 C CNN
+F 3 "" H 5650 2300 50  0001 C CNN
+	1    5650 2300
+	1    0    0    -1  
+$EndComp
+Text GLabel 6150 2600 2    50   Output ~ 0
+HCLK
+Wire Wire Line
+	6150 2600 6050 2600
+Connection ~ 6050 2600
+$Comp
+L OPL_Discrete_Semiconductor:SMD-MOSFET-N-CH-50V-200MA-BSS138W-7-F_SOT-23_ Q?
+U 1 1 615FF99A
+P 6050 3550
+AR Path="/60D4BA24/615FF99A" Ref="Q?"  Part="1" 
+AR Path="/60D4BA24/615DFC2A/615FF99A" Ref="Q12"  Part="1" 
+AR Path="/6174C520/615FF99A" Ref="Q11"  Part="1" 
+F 0 "Q11" V 6206 3550 45  0000 C CNN
+F 1 "SMD-MOSFET-N-CH-50V-200MA-BSS138W-7-F_SOT-23_" V 6290 3550 45  0000 C CNN
+F 2 "Package_TO_SOT_SMD:TSOT-23_HandSoldering" H 6050 3550 50  0001 C CNN
+F 3 "" H 6050 3550 50  0001 C CNN
+F 4 "BSS138W-7-F" H 6080 3700 20  0001 C CNN "MPN"
+F 5 "305030000" H 6080 3700 20  0001 C CNN "SKU"
+	1    6050 3550
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 615FF9A0
+P 5850 3400
+AR Path="/60D4BA24/615FF9A0" Ref="R?"  Part="1" 
+AR Path="/60D4BA24/615DFC2A/615FF9A0" Ref="R28"  Part="1" 
+AR Path="/6174C520/615FF9A0" Ref="R19"  Part="1" 
+F 0 "R19" H 5920 3446 50  0000 L CNN
+F 1 "R" H 5920 3355 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 5780 3400 50  0001 C CNN
+F 3 "~" H 5850 3400 50  0001 C CNN
+	1    5850 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 615FF9A6
+P 6250 3400
+AR Path="/60D4BA24/615FF9A6" Ref="R?"  Part="1" 
+AR Path="/60D4BA24/615DFC2A/615FF9A6" Ref="R31"  Part="1" 
+AR Path="/6174C520/615FF9A6" Ref="R22"  Part="1" 
+F 0 "R22" H 6320 3446 50  0000 L CNN
+F 1 "R" H 6320 3355 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 6180 3400 50  0001 C CNN
+F 3 "~" H 6250 3400 50  0001 C CNN
+	1    6250 3400
+	1    0    0    -1  
+$EndComp
+Text GLabel 5700 3550 0    50   Output ~ 0
+DO
+Wire Wire Line
+	5850 3250 6050 3250
+Wire Wire Line
+	6050 3250 6050 3350
+Connection ~ 5850 3250
+Wire Wire Line
+	5850 3550 5700 3550
+Connection ~ 5850 3550
+$Comp
+L power:+3.3V #PWR?
+U 1 1 615FF9B2
+P 5850 3250
+AR Path="/60D4BA24/615FF9B2" Ref="#PWR?"  Part="1" 
+AR Path="/60D4BA24/615DFC2A/615FF9B2" Ref="#PWR037"  Part="1" 
+AR Path="/6174C520/615FF9B2" Ref="#PWR027"  Part="1" 
+F 0 "#PWR027" H 5850 3100 50  0001 C CNN
+F 1 "+3.3V" H 5865 3423 50  0000 C CNN
+F 2 "" H 5850 3250 50  0001 C CNN
+F 3 "" H 5850 3250 50  0001 C CNN
+	1    5850 3250
+	1    0    0    -1  
+$EndComp
+Text GLabel 6350 3550 2    50   Input ~ 0
+HDO
+Wire Wire Line
+	6350 3550 6250 3550
+Connection ~ 6250 3550
+$Comp
+L OPL_Discrete_Semiconductor:SMD-MOSFET-N-CH-50V-200MA-BSS138W-7-F_SOT-23_ Q?
+U 1 1 615FF9BD
+P 5700 4400
+AR Path="/60D4BA24/615FF9BD" Ref="Q?"  Part="1" 
+AR Path="/60D4BA24/615DFC2A/615FF9BD" Ref="Q10"  Part="1" 
+AR Path="/6174C520/615FF9BD" Ref="Q9"  Part="1" 
+F 0 "Q9" V 5856 4400 45  0000 C CNN
+F 1 "SMD-MOSFET-N-CH-50V-200MA-BSS138W-7-F_SOT-23_" V 5940 4400 45  0000 C CNN
+F 2 "Package_TO_SOT_SMD:TSOT-23_HandSoldering" H 5700 4400 50  0001 C CNN
+F 3 "" H 5700 4400 50  0001 C CNN
+F 4 "BSS138W-7-F" H 5730 4550 20  0001 C CNN "MPN"
+F 5 "305030000" H 5730 4550 20  0001 C CNN "SKU"
+	1    5700 4400
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 615FF9C3
+P 5500 4250
+AR Path="/60D4BA24/615FF9C3" Ref="R?"  Part="1" 
+AR Path="/60D4BA24/615DFC2A/615FF9C3" Ref="R26"  Part="1" 
+AR Path="/6174C520/615FF9C3" Ref="R17"  Part="1" 
+F 0 "R17" H 5570 4296 50  0000 L CNN
+F 1 "R" H 5570 4205 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 5430 4250 50  0001 C CNN
+F 3 "~" H 5500 4250 50  0001 C CNN
+	1    5500 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 615FF9C9
+P 5900 4250
+AR Path="/60D4BA24/615FF9C9" Ref="R?"  Part="1" 
+AR Path="/60D4BA24/615DFC2A/615FF9C9" Ref="R29"  Part="1" 
+AR Path="/6174C520/615FF9C9" Ref="R20"  Part="1" 
+F 0 "R20" H 5970 4296 50  0000 L CNN
+F 1 "R" H 5970 4205 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 5830 4250 50  0001 C CNN
+F 3 "~" H 5900 4250 50  0001 C CNN
+	1    5900 4250
+	1    0    0    -1  
+$EndComp
+Text GLabel 5350 4400 0    50   Input ~ 0
+LAT
+Wire Wire Line
+	5500 4100 5700 4100
+Wire Wire Line
+	5700 4100 5700 4200
+Connection ~ 5500 4100
+Wire Wire Line
+	5500 4400 5350 4400
+Connection ~ 5500 4400
+$Comp
+L power:+3.3V #PWR?
+U 1 1 615FF9D5
+P 5500 4100
+AR Path="/60D4BA24/615FF9D5" Ref="#PWR?"  Part="1" 
+AR Path="/60D4BA24/615DFC2A/615FF9D5" Ref="#PWR035"  Part="1" 
+AR Path="/6174C520/615FF9D5" Ref="#PWR025"  Part="1" 
+F 0 "#PWR025" H 5500 3950 50  0001 C CNN
+F 1 "+3.3V" H 5515 4273 50  0000 C CNN
+F 2 "" H 5500 4100 50  0001 C CNN
+F 3 "" H 5500 4100 50  0001 C CNN
+	1    5500 4100
+	1    0    0    -1  
+$EndComp
+Text GLabel 6000 4400 2    50   Output ~ 0
+HLAT
+Wire Wire Line
+	6000 4400 5900 4400
+Connection ~ 5900 4400
+Text Notes 1250 3900 0    50   ~ 0
+level converter
+$Comp
+L power:GND #PWR?
+U 1 1 6173E73B
+P 1950 4500
+AR Path="/60D4BA24/6173E73B" Ref="#PWR?"  Part="1" 
+AR Path="/60D4BA24/615DFC2A/6173E73B" Ref="#PWR022"  Part="1" 
+AR Path="/6174C520/6173E73B" Ref="#PWR017"  Part="1" 
+F 0 "#PWR017" H 1950 4250 50  0001 C CNN
+F 1 "GND" H 1955 4327 50  0000 C CNN
+F 2 "" H 1950 4500 50  0001 C CNN
+F 3 "" H 1950 4500 50  0001 C CNN
+	1    1950 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1950 4500 1400 4500
+Text GLabel 1400 6200 2    50   Input ~ 0
+MTB_EN
+Text GLabel 1400 6100 2    50   Input ~ 0
+MTB_PHASE
+Text GLabel 1400 6000 2    50   Input ~ 0
+MTA_EN
+Text GLabel 1400 5900 2    50   Input ~ 0
+MTA_PHASE
+Text GLabel 1400 5800 2    50   Input ~ 0
+DO
+Text GLabel 1400 5700 2    50   Input ~ 0
+LAT
+Text GLabel 1400 5600 2    50   Input ~ 0
+TM_
+Text GLabel 1400 5500 2    50   Input ~ 0
+TM
+Text GLabel 1400 5400 2    50   Input ~ 0
+STB6
+Text GLabel 1400 5300 2    50   Input ~ 0
+STB5
+Text GLabel 1400 5200 2    50   Input ~ 0
+STB4
+Text GLabel 1400 5100 2    50   Input ~ 0
+STB3
+Text GLabel 1400 5000 2    50   Input ~ 0
+STB2
+Text GLabel 1400 4900 2    50   Input ~ 0
+STB1
+Text GLabel 1400 4700 2    50   Input ~ 0
+DI
+Text GLabel 1400 4600 2    50   Input ~ 0
+PHE
+Text GLabel 1400 4400 2    50   Input ~ 0
+VLOGIC
+Text GLabel 1400 4300 2    50   Input ~ 0
+VH
+$Comp
+L power:+5V #PWR016
+U 1 1 6173E755
+P 1850 4200
+F 0 "#PWR016" H 1850 4050 50  0001 C CNN
+F 1 "+5V" H 1865 4373 50  0000 C CNN
+F 2 "" H 1850 4200 50  0001 C CNN
+F 3 "" H 1850 4200 50  0001 C CNN
+	1    1850 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1850 4200 1400 4200
+Text Notes 8700 3400 2    50   ~ 0
+level converter(to Header)
+$Comp
+L Connector:Conn_01x22_Female J?
+U 1 1 61778DF6
+P 8750 4600
+AR Path="/60D4BA24/61778DF6" Ref="J?"  Part="1" 
+AR Path="/60D4BA24/615DFC2A/61778DF6" Ref="J20"  Part="1" 
+AR Path="/6174C520/61778DF6" Ref="J4"  Part="1" 
+F 0 "J4" H 8778 4626 50  0000 L CNN
+F 1 "Conn_01x22_Female" H 8778 4535 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x22_P2.54mm_Vertical" H 8750 4600 50  0001 C CNN
+F 3 "~" H 8750 4600 50  0001 C CNN
+	1    8750 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61778DFC
+P 8000 4000
+AR Path="/60D4BA24/61778DFC" Ref="#PWR?"  Part="1" 
+AR Path="/60D4BA24/615DFC2A/61778DFC" Ref="#PWR038"  Part="1" 
+AR Path="/6174C520/61778DFC" Ref="#PWR028"  Part="1" 
+F 0 "#PWR028" H 8000 3750 50  0001 C CNN
+F 1 "GND" H 8005 3827 50  0000 C CNN
+F 2 "" H 8000 4000 50  0001 C CNN
+F 3 "" H 8000 4000 50  0001 C CNN
+	1    8000 4000
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	8000 4000 8550 4000
+Text GLabel 8550 5700 0    50   Input ~ 0
+MTB_EN
+Text GLabel 8550 5600 0    50   Input ~ 0
+MTB_PHASE
+Text GLabel 8550 5500 0    50   Input ~ 0
+MTA_EN
+Text GLabel 8550 5400 0    50   Input ~ 0
+MTA_PHASE
+Text GLabel 8550 5300 0    50   Input ~ 0
+HDO
+Text GLabel 8550 5200 0    50   Input ~ 0
+HLAT
+Text GLabel 8550 5100 0    50   Input ~ 0
+TM_
+Text GLabel 8550 5000 0    50   Input ~ 0
+TM
+Text GLabel 8550 4900 0    50   Input ~ 0
+HSTB6
+Text GLabel 8550 4800 0    50   Input ~ 0
+HSTB5
+Text GLabel 8550 4700 0    50   Input ~ 0
+HSTB4
+Text GLabel 8550 4600 0    50   Input ~ 0
+HSTB3
+Text GLabel 8550 4500 0    50   Input ~ 0
+HSTB2
+Text GLabel 8550 4400 0    50   Input ~ 0
+HSTB1
+Text GLabel 8550 4200 0    50   Input ~ 0
+HDI
+Text GLabel 8550 4100 0    50   Input ~ 0
+HPHE
+Text GLabel 8550 3900 0    50   Input ~ 0
+VLOGIC
+Text GLabel 8550 3800 0    50   Input ~ 0
+VH
+$Comp
+L power:+5V #PWR029
+U 1 1 61778E15
+P 8100 3700
+F 0 "#PWR029" H 8100 3550 50  0001 C CNN
+F 1 "+5V" H 8115 3873 50  0000 C CNN
+F 2 "" H 8100 3700 50  0001 C CNN
+F 3 "" H 8100 3700 50  0001 C CNN
+	1    8100 3700
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	8100 3700 8550 3700
+$Comp
+L power:+3.3V #PWR030
+U 1 1 6178A3C1
+P 8400 3600
+F 0 "#PWR030" H 8400 3450 50  0001 C CNN
+F 1 "+3.3V" H 8415 3773 50  0000 C CNN
+F 2 "" H 8400 3600 50  0001 C CNN
+F 3 "" H 8400 3600 50  0001 C CNN
+	1    8400 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8400 3600 8550 3600
+$Comp
+L Connector:Conn_01x22_Female J?
+U 1 1 617ABB5A
+P 1200 5100
+AR Path="/60D4BA24/617ABB5A" Ref="J?"  Part="1" 
+AR Path="/60D4BA24/615DFC2A/617ABB5A" Ref="J19"  Part="1" 
+AR Path="/6174C520/617ABB5A" Ref="J3"  Part="1" 
+F 0 "J3" H 1228 5126 50  0000 L CNN
+F 1 "Conn_01x22_Female" H 1228 5035 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x22_P2.54mm_Vertical" H 1200 5100 50  0001 C CNN
+F 3 "~" H 1200 5100 50  0001 C CNN
+	1    1200 5100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR015
+U 1 1 617AD711
+P 1400 4100
+F 0 "#PWR015" H 1400 3950 50  0001 C CNN
+F 1 "+3.3V" H 1415 4273 50  0000 C CNN
+F 2 "" H 1400 4100 50  0001 C CNN
+F 3 "" H 1400 4100 50  0001 C CNN
+	1    1400 4100
+	1    0    0    -1  
+$EndComp
+Text GLabel 3950 1300 1    50   Input ~ 0
+VLOGIC
+Connection ~ 3550 1600
+$Comp
+L OPL_Discrete_Semiconductor:SMD-MOSFET-N-CH-50V-200MA-BSS138W-7-F_SOT-23_ Q?
+U 1 1 615FF84D
+P 3750 1600
+AR Path="/60D4BA24/615FF84D" Ref="Q?"  Part="1" 
+AR Path="/60D4BA24/615DFC2A/615FF84D" Ref="Q8"  Part="1" 
+AR Path="/6174C520/615FF84D" Ref="Q7"  Part="1" 
+F 0 "Q7" V 3906 1600 45  0000 C CNN
+F 1 "SMD-MOSFET-N-CH-50V-200MA-BSS138W-7-F_SOT-23_" V 3990 1600 45  0000 C CNN
+F 2 "Package_TO_SOT_SMD:TSOT-23_HandSoldering" H 3750 1600 50  0001 C CNN
+F 3 "" H 3750 1600 50  0001 C CNN
+F 4 "BSS138W-7-F" H 3780 1750 20  0001 C CNN "MPN"
+F 5 "305030000" H 3780 1750 20  0001 C CNN "SKU"
+	1    3750 1600
+	0    1    1    0   
+$EndComp
+Text GLabel 6050 2300 1    50   Input ~ 0
+VLOGIC
+Text GLabel 3950 2200 1    50   Input ~ 0
+VLOGIC
+Text GLabel 3900 3050 1    50   Input ~ 0
+VLOGIC
+Text GLabel 6250 3250 1    50   Input ~ 0
+VLOGIC
+Text GLabel 5900 4100 1    50   Input ~ 0
+VLOGIC
+Text GLabel 3850 4000 1    50   Input ~ 0
+VLOGIC
+Text GLabel 3800 4850 1    50   Input ~ 0
+VLOGIC
+Text GLabel 3850 5650 1    50   Input ~ 0
+VLOGIC
+Text GLabel 3800 6500 1    50   Input ~ 0
+VLOGIC
+Text GLabel 8550 4300 0    50   Input ~ 0
+HCLK
+Text GLabel 1400 4800 2    50   Input ~ 0
+CLK
+$Comp
+L OPL_Discrete_Semiconductor:SMD-MOSFET-N-CH-50V-200MA-BSS138W-7-F_SOT-23_ Q?
+U 1 1 617B13E0
+P 5850 1400
+AR Path="/60D4BA24/617B13E0" Ref="Q?"  Part="1" 
+AR Path="/60D4BA24/615DFC2A/617B13E0" Ref="Q?"  Part="1" 
+AR Path="/617B13E0" Ref="Q?"  Part="1" 
+F 0 "Q?" V 6006 1400 45  0000 C CNN
+F 1 "SMD-MOSFET-N-CH-50V-200MA-BSS138W-7-F_SOT-23_" V 6090 1400 45  0000 C CNN
+F 2 "Package_TO_SOT_SMD:TSOT-23_HandSoldering" H 5850 1400 50  0001 C CNN
+F 3 "" H 5850 1400 50  0001 C CNN
+F 4 "BSS138W-7-F" H 5880 1550 20  0001 C CNN "MPN"
+F 5 "305030000" H 5880 1550 20  0001 C CNN "SKU"
+	1    5850 1400
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 617B13E6
+P 5650 1250
+AR Path="/60D4BA24/617B13E6" Ref="R?"  Part="1" 
+AR Path="/60D4BA24/615DFC2A/617B13E6" Ref="R?"  Part="1" 
+AR Path="/617B13E6" Ref="R?"  Part="1" 
+F 0 "R?" H 5720 1296 50  0000 L CNN
+F 1 "R" H 5720 1205 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 5580 1250 50  0001 C CNN
+F 3 "~" H 5650 1250 50  0001 C CNN
+	1    5650 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 617B13EC
+P 6050 1250
+AR Path="/60D4BA24/617B13EC" Ref="R?"  Part="1" 
+AR Path="/60D4BA24/615DFC2A/617B13EC" Ref="R?"  Part="1" 
+AR Path="/617B13EC" Ref="R?"  Part="1" 
+F 0 "R?" H 6120 1296 50  0000 L CNN
+F 1 "R" H 6120 1205 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 5980 1250 50  0001 C CNN
+F 3 "~" H 6050 1250 50  0001 C CNN
+	1    6050 1250
+	1    0    0    -1  
+$EndComp
+Text GLabel 5500 1400 0    50   Input ~ 0
+PHE
+Wire Wire Line
+	5650 1100 5850 1100
+Wire Wire Line
+	5850 1100 5850 1200
+Connection ~ 5650 1100
+Wire Wire Line
+	5650 1400 5500 1400
+Connection ~ 5650 1400
+$Comp
+L power:+3.3V #PWR?
+U 1 1 617B13F8
+P 5650 1100
+AR Path="/60D4BA24/617B13F8" Ref="#PWR?"  Part="1" 
+AR Path="/60D4BA24/615DFC2A/617B13F8" Ref="#PWR?"  Part="1" 
+AR Path="/617B13F8" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 5650 950 50  0001 C CNN
+F 1 "+3.3V" H 5665 1273 50  0000 C CNN
+F 2 "" H 5650 1100 50  0001 C CNN
+F 3 "" H 5650 1100 50  0001 C CNN
+	1    5650 1100
+	1    0    0    -1  
+$EndComp
+Text GLabel 6150 1400 2    50   Output ~ 0
+HPHE
+Wire Wire Line
+	6150 1400 6050 1400
+Connection ~ 6050 1400
+$Comp
+L power:+5V #PWR?
+U 1 1 617B1401
+P 6050 1100
+AR Path="/60D4BA24/617B1401" Ref="#PWR?"  Part="1" 
+AR Path="/60D4BA24/615DFC2A/617B1401" Ref="#PWR?"  Part="1" 
+AR Path="/617B1401" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 6050 950 50  0001 C CNN
+F 1 "+5V" H 6065 1273 50  0000 C CNN
+F 2 "" H 6050 1100 50  0001 C CNN
+F 3 "" H 6050 1100 50  0001 C CNN
+	1    6050 1100
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

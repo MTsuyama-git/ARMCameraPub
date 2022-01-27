@@ -1,0 +1,282 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 7
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L power:GND #PWR?
+U 1 1 60FE220F
+P 4150 2300
+AR Path="/60FE220F" Ref="#PWR?"  Part="1" 
+AR Path="/60F9FA56/60FE220F" Ref="#PWR089"  Part="1" 
+F 0 "#PWR089" H 4150 2050 50  0001 C CNN
+F 1 "GND" H 4155 2127 50  0000 C CNN
+F 2 "" H 4150 2300 50  0001 C CNN
+F 3 "" H 4150 2300 50  0001 C CNN
+	1    4150 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 2300 4300 2350
+Text GLabel 4050 2100 1    50   Input ~ 0
+LCD_RESET
+Text GLabel 3900 2300 1    50   Input ~ 0
+LCD_A0
+Text GLabel 3800 2300 1    50   Input ~ 0
+SPI_MOSI
+Text GLabel 3650 2300 1    50   Input ~ 0
+LCD_SCK
+Wire Wire Line
+	3650 2300 3650 2400
+Wire Wire Line
+	3650 2400 3700 2400
+Wire Wire Line
+	4150 2300 4300 2300
+Wire Wire Line
+	3700 2400 3700 2650
+Wire Wire Line
+	3850 2500 3850 2650
+Wire Wire Line
+	3800 2500 3850 2500
+Wire Wire Line
+	3800 2300 3800 2500
+Wire Wire Line
+	4000 2550 4000 2650
+Wire Wire Line
+	3900 2550 4000 2550
+Wire Wire Line
+	3900 2300 3900 2550
+Wire Wire Line
+	4150 2550 4150 2650
+Wire Wire Line
+	4050 2550 4150 2550
+Text GLabel 4450 2650 1    50   Input ~ 0
+LCD_NSS
+$Comp
+L Device:R R?
+U 1 1 60FE2227
+P 4300 2500
+AR Path="/60FE2227" Ref="R?"  Part="1" 
+AR Path="/60F9FA56/60FE2227" Ref="R39"  Part="1" 
+F 0 "R39" H 4370 2546 50  0000 L CNN
+F 1 "R" H 4370 2455 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 4230 2500 50  0001 C CNN
+F 3 "~" H 4300 2500 50  0001 C CNN
+	1    4300 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 60FE222D
+P 3550 2650
+AR Path="/60FE222D" Ref="#PWR?"  Part="1" 
+AR Path="/60F9FA56/60FE222D" Ref="#PWR088"  Part="1" 
+F 0 "#PWR088" H 3550 2500 50  0001 C CNN
+F 1 "+3.3V" H 3565 2823 50  0000 C CNN
+F 2 "" H 3550 2650 50  0001 C CNN
+F 3 "" H 3550 2650 50  0001 C CNN
+	1    3550 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 2450 3400 2650
+Wire Wire Line
+	3250 2450 3400 2450
+$Comp
+L power:GND #PWR?
+U 1 1 60FE2235
+P 3250 2450
+AR Path="/60FE2235" Ref="#PWR?"  Part="1" 
+AR Path="/60F9FA56/60FE2235" Ref="#PWR087"  Part="1" 
+F 0 "#PWR087" H 3250 2200 50  0001 C CNN
+F 1 "GND" H 3255 2277 50  0000 C CNN
+F 2 "" H 3250 2450 50  0001 C CNN
+F 3 "" H 3250 2450 50  0001 C CNN
+	1    3250 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 60FE223B
+P 2950 2650
+AR Path="/60FE223B" Ref="#PWR?"  Part="1" 
+AR Path="/60F9FA56/60FE223B" Ref="#PWR086"  Part="1" 
+F 0 "#PWR086" H 2950 2500 50  0001 C CNN
+F 1 "+3.3V" H 2965 2823 50  0000 C CNN
+F 2 "" H 2950 2650 50  0001 C CNN
+F 3 "" H 2950 2650 50  0001 C CNN
+	1    2950 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L jig:AE-ATM0177B3A U?
+U 1 1 60FE2241
+P 3550 3000
+AR Path="/60FE2241" Ref="U?"  Part="1" 
+AR Path="/60F9FA56/60FE2241" Ref="U7"  Part="1" 
+F 0 "U7" H 3375 2777 50  0000 C CNN
+F 1 "AE-ATM0177B3A" H 3375 2686 50  0000 C CNN
+F 2 "Connector_FFC-FPC:Hirose_FH12-15S-0.5SH_1x15-1MP_P0.50mm_Horizontal" H 2750 2950 50  0001 C CNN
+F 3 "" H 2750 2950 50  0001 C CNN
+	1    3550 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4050 2100 4050 2150
+$Comp
+L Device:R R?
+U 1 1 60FE2248
+P 4300 2000
+AR Path="/60FE2248" Ref="R?"  Part="1" 
+AR Path="/60F9FA56/60FE2248" Ref="R38"  Part="1" 
+F 0 "R38" H 4370 2046 50  0000 L CNN
+F 1 "R" H 4370 1955 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 4230 2000 50  0001 C CNN
+F 3 "~" H 4300 2000 50  0001 C CNN
+	1    4300 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 2150 4050 2150
+Connection ~ 4050 2150
+Wire Wire Line
+	4050 2150 4050 2550
+$Comp
+L power:+3.3V #PWR?
+U 1 1 60FE2251
+P 4300 1850
+AR Path="/60FE2251" Ref="#PWR?"  Part="1" 
+AR Path="/60F9FA56/60FE2251" Ref="#PWR090"  Part="1" 
+F 0 "#PWR090" H 4300 1700 50  0001 C CNN
+F 1 "+3.3V" H 4315 2023 50  0000 C CNN
+F 2 "" H 4300 1850 50  0001 C CNN
+F 3 "" H 4300 1850 50  0001 C CNN
+	1    4300 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x07_Female J11
+U 1 1 60FE73B3
+P 2000 1500
+F 0 "J11" H 2028 1526 50  0000 L CNN
+F 1 "Conn_01x06_Female" H 2028 1435 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x07_P2.54mm_Vertical" H 2000 1500 50  0001 C CNN
+F 3 "~" H 2000 1500 50  0001 C CNN
+	1    2000 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR085
+U 1 1 60FE7BE2
+P 1800 1200
+F 0 "#PWR085" H 1800 1050 50  0001 C CNN
+F 1 "+3.3V" H 1815 1373 50  0000 C CNN
+F 2 "" H 1800 1200 50  0001 C CNN
+F 3 "" H 1800 1200 50  0001 C CNN
+	1    1800 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR083
+U 1 1 60FE8148
+P 1250 1300
+F 0 "#PWR083" H 1250 1050 50  0001 C CNN
+F 1 "GND" H 1255 1127 50  0000 C CNN
+F 2 "" H 1250 1300 50  0001 C CNN
+F 3 "" H 1250 1300 50  0001 C CNN
+	1    1250 1300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1250 1300 1800 1300
+$Comp
+L Device:C C17
+U 1 1 60FE882C
+P 1150 1150
+F 0 "C17" H 1265 1196 50  0000 L CNN
+F 1 "C" H 1265 1105 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 1188 1000 50  0001 C CNN
+F 3 "~" H 1150 1150 50  0001 C CNN
+	1    1150 1150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1150 1300 1250 1300
+Connection ~ 1250 1300
+Wire Wire Line
+	1150 1000 1500 1000
+Wire Wire Line
+	1500 1000 1500 1200
+Wire Wire Line
+	1500 1200 1800 1200
+Connection ~ 1800 1200
+Text GLabel 1800 1400 0    50   Input ~ 0
+LCD_SCK
+Text GLabel 1800 1500 0    50   Input ~ 0
+SPI_MOSI
+Text GLabel 1800 1600 0    50   Input ~ 0
+LCD_A0
+Text GLabel 1800 1700 0    50   Input ~ 0
+LCD_RESET
+Text GLabel 1800 1800 0    50   Input ~ 0
+LCD_NSS
+$Comp
+L Connector:Conn_01x07_Female J10
+U 1 1 60FECAD7
+P 1700 3000
+F 0 "J10" H 1728 3026 50  0000 L CNN
+F 1 "Conn_01x06_Female" H 1728 2935 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x07_P2.54mm_Vertical" H 1700 3000 50  0001 C CNN
+F 3 "~" H 1700 3000 50  0001 C CNN
+	1    1700 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR084
+U 1 1 60FECADD
+P 1500 2700
+F 0 "#PWR084" H 1500 2550 50  0001 C CNN
+F 1 "+3.3V" H 1515 2873 50  0000 C CNN
+F 2 "" H 1500 2700 50  0001 C CNN
+F 3 "" H 1500 2700 50  0001 C CNN
+	1    1500 2700
+	1    0    0    -1  
+$EndComp
+Text GLabel 1500 2900 0    50   Input ~ 0
+LCD_SCK
+Text GLabel 1500 3000 0    50   Input ~ 0
+SPI_MOSI
+Text GLabel 1500 3100 0    50   Input ~ 0
+LCD_A0
+Text GLabel 1500 3200 0    50   Input ~ 0
+LCD_RESET
+Text GLabel 1500 3300 0    50   Input ~ 0
+LCD_NSS
+Wire Wire Line
+	950  2800 1500 2800
+$Comp
+L power:GND #PWR082
+U 1 1 60FECAE3
+P 950 2800
+F 0 "#PWR082" H 950 2550 50  0001 C CNN
+F 1 "GND" H 955 2627 50  0000 C CNN
+F 2 "" H 950 2800 50  0001 C CNN
+F 3 "" H 950 2800 50  0001 C CNN
+	1    950  2800
+	1    0    0    -1  
+$EndComp
+Text Notes 1450 2350 2    50   ~ 0
+main board
+Text Notes 1650 850  2    50   ~ 0
+lcd board
+$EndSCHEMATC
